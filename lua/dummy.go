@@ -14,5 +14,5 @@
 package lua
 
 import (
-	_ "github.com/aarzilli/golua/lua/lua"
+	_ "github.com/nwidger/golua/lua/lua"
 )
