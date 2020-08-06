@@ -1,25 +1,25 @@
 Go Bindings for the lua C API
 =========================
 
-[![Build Status](https://travis-ci.org/aarzilli/golua.svg?branch=master)](https://travis-ci.org/aarzilli/golua)
+[![Build Status](https://travis-ci.org/nwidger/golua.svg?branch=master)](https://travis-ci.org/nwidger/golua)
 
 Simplest way to install:
 
-	# go get -u github.com/aarzilli/golua/lua
+	# go get -u github.com/nwidger/golua/lua
 
 Will work as long as your compiler can find a shared object called lua5.1 on linux, or lua anywhere else.
 If your linux system uses "lua" as the shared object name for lua (for example, Fedora Core does this) you can install using:
 
-	# go get -u -tags llua github.com/aarzilli/golua/lua
+	# go get -u -tags llua github.com/nwidger/golua/lua
 
 If your linux system uses "lua-5.1" as the shared object name for lua (for example, some versions of CentOS do this) you can install using:
 
-	# go get -u -tags lluadash5.1 github.com/aarzilli/golua/lua
+	# go get -u -tags lluadash5.1 github.com/nwidger/golua/lua
 
 
 You can then try to run the examples:
 
-	$ cd /usr/local/go/src/pkg/github.com/aarzilli/golua/_example/
+	$ cd /usr/local/go/src/pkg/github.com/nwidger/golua/_example/
 	$ go run basic.go
 	$ go run alloc.go
 	$ go run panic.go
@@ -121,7 +121,7 @@ To link with [luajit-2.0.x](http://luajit.org/luajit.html), you can use CGO_CFLA
 ```
 $ CGO_CFLAGS=`pkg-config luajit --cflags`
 $ CGO_LDFLAGS=`pkg-config luajit --libs-only-L`
-$ go get -f -u -tags luajit github.com/aarzilli/golua/lua
+$ go get -f -u -tags luajit github.com/nwidger/golua/lua
 ```
 
 CONTRIBUTORS
